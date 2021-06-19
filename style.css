@@ -1,0 +1,92 @@
+html, body {
+width: 880px;
+  margin: auto;
+  text-align: center;
+}
+
+.top{
+  position: absolute;
+  top: -16px;
+  width: 800px;
+  height: 20px;
+
+}
+.top p{
+	 float: left;
+	 width: 100px; 
+	 height: 20px; 
+	 text-align: center;
+	 margin:0px;
+}
+.bottom{
+	bottom: -16px;
+	position: absolute;
+	width: 800px;
+	height: 10px;
+}
+.bottom p{
+	 transform: rotate(180deg);
+	 float: left;
+	 width: 100px; 
+	 height: 10px; 
+	 text-align: center;
+	 margin: 0px;
+}
+.left{
+	position: absolute;
+    left: -18px;
+	width: 20px;
+	float: left;
+}
+.left p{
+	margin: 40px 0px 0px 0px;
+	text-align: center;
+	width: 20px; 
+	height: 60px;
+}
+.right{
+	position: absolute;
+	top: -45px;
+	right: -17px;
+	width: 20px;
+	float: right;
+}
+.right p{
+	transform: rotate(180deg);
+	margin: 40px 0px 0px 0px;
+	text-align: center;
+	width: 20px; 
+	height: 60px;
+}
+
+.frame {
+	border: 20px solid #412b15;
+	border-radius: 40px;
+}
+
+.chess{
+	display: inline-block;
+  	position: relative;
+  	border: 20px solid grey;
+ 	border-radius: 20px;
+  	text-align: center;
+	padding: 0px;
+	width: 800px;
+	height: 800px;
+}
+.str div{
+float: left; width: 100px; height: 100px; 
+}
+
+.chess .str:nth-child(odd) div:nth-child(odd)  {
+	background: white;
+	}
+.chess .str:nth-child(even) div:nth-child(even) {
+	background: white;
+}
+.chess .str:nth-child(odd) div:nth-child(even)  {
+	background: #412b15 ;
+	}
+.chess .str:nth-child(even) div:nth-child(odd) {
+	background: #412b15 ;
+}
